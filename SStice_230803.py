@@ -74,3 +74,8 @@
 
 # test
 
+ab = ['0','2','3']
+
+re = ''.join(ab)
+
+print(re)

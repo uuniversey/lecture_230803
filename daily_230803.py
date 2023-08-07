@@ -211,24 +211,45 @@
 
 # 1961. 숫자 배열 회전
 
-import sys
-sys.stdin = open('input_1961.txt', 'r')
+# import sys
+# sys.stdin = open('input_1961.txt', 'r')
+#
+# T = int(input())
+# for tc in range(1, T+1):
+#     N = int(input())
+#     arr = [list(map(int, input().split())) for _ in range(N)]
+#     my_box = [[0] * 3 for _ in range(N)]
+#     my_list = []
+#     my_str = ''
+#     sum_str = ''
+#
+#     for col in range(N):                                    # 90도
+#         sum_str = ''
+#         for row in range(N-1, -1, -1):
+#             sum_str += str(arr[row][col])
+#         my_list.append(sum_str)
+#
+#     for row in range(N-1, -1, -1):                          # 180도
+#         sum_str = ''
+#         for col in range(N-1, -1, -1):
+#             sum_str += str(arr[row][col])
+#         my_list.append(sum_str)
+#
+#     for col in range(N-1, -1, -1):                           # 270도
+#         sum_str = ''
+#         for row in range(N):
+#             sum_str += str(arr[row][col])
+#         my_list.append(sum_str)
+#
+#     for col in range(3):                                    # 리스트에 담아둔걸 박스로 옮기기
+#         for row in range(N):
+#             my_box[row][col] = my_list.pop(0)
+#
+#     print(f'#{tc}')
+#     for a,b,c in my_box:
+#         print(a,b,c)
 
-T = int(input())
-for tc in range(1, T+1):
-    N = int(input())
-    arr = [list(map(int, input().split())) for _ in range(N)]
-    my_box = [[0] * N for _ in range(N)]
-    my_list = []
-    sum_num = 0
-    for col in range(N):
-        sum_num = 0
-        for row in range(N-1, -1, -1):
-            sum_num += arr[row][col] * (10**row)
-        my_list.append(sum_num)
 
-    for col in range(N):
-        for row in range(N):
-            my_box[row][col] = my_list[row]
 
-    print (f'#{tc} {my_box}')
+# 18147. 연습문제 3. 달팽이 정렬
+# 1954. 달팽이 숫자
